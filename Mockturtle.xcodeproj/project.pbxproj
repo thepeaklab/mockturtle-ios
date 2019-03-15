@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		597B36292201D477007FC4F1 /* MockturtleScenarioOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B36282201D477007FC4F1 /* MockturtleScenarioOutput.swift */; };
 		597B362B2201D48B007FC4F1 /* MockturtleRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B362A2201D48B007FC4F1 /* MockturtleRequestAdapter.swift */; };
-		597B36312201D7DA007FC4F1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597B36302201D7DA007FC4F1 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				597B36312201D7DA007FC4F1 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +81,6 @@
 			buildPhases = (
 				OBJ_21 /* Sources */,
 				OBJ_23 /* Frameworks */,
-				597B362E2201D7B4007FC4F1 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -118,29 +115,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		597B362E2201D7B4007FC4F1 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_21 /* Sources */ = {
