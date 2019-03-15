@@ -44,8 +44,8 @@ public class MockturtleRequestAdapter: RequestAdapter {
         guard let identifier = scenarioOutput.stateIdentifierFor(scenarioIdentifier: scenarioIdentifier,
                                                                  method: httpMethod,
                                                                  path: path)
-            else {
-                return urlRequest
+        else {
+            return urlRequest
         }
 
         var request = urlRequest
