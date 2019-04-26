@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		597B36292201D477007FC4F1 /* MockturtleScenarioOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B36282201D477007FC4F1 /* MockturtleScenarioOutput.swift */; };
 		597B362B2201D48B007FC4F1 /* MockturtleRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B362A2201D48B007FC4F1 /* MockturtleRequestAdapter.swift */; };
+		59CEBED62273246300C64562 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CEBED52273246300C64562 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		597B36282201D477007FC4F1 /* MockturtleScenarioOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleScenarioOutput.swift; sourceTree = "<group>"; };
 		597B362A2201D48B007FC4F1 /* MockturtleRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleRequestAdapter.swift; sourceTree = "<group>"; };
 		597B36302201D7DA007FC4F1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		59CEBED52273246300C64562 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Mockturtle::Mockturtle::Product" /* Mockturtle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mockturtle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				59CEBED62273246300C64562 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +35,7 @@
 		597B362F2201D7DA007FC4F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59CEBED52273246300C64562 /* Alamofire.framework */,
 				597B36302201D7DA007FC4F1 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -104,6 +108,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = OBJ_5;

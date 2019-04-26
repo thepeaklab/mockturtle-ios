@@ -6,8 +6,6 @@
 //
 
 
-#if canImport(Alamofire)
-
 import Foundation
 import Alamofire
 
@@ -54,6 +52,3 @@ public class MockturtleRequestAdapter: RequestAdapter {
     }
 
 }
-
-
-#endif
