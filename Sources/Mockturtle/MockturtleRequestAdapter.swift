@@ -35,6 +35,13 @@ public class MockturtleRequestAdapter: RequestAdapter {
         self.init(output, scenarioIdentifier: scenarioIdentifier)
     }
 
+    public convenience init?(scenarioData: Data?, scenarioIdentifier: String? = nil) {
+        guard let data = scenarioData else { return nil }
+        guard let output = try? JSONDecoder().decode(MockturtleScenarioOutput.self, from: data) else { return nil }
+
+        self.init(output, scenarioIdentifier: scenarioIdentifier)
+    }
+
     public func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
         guard let scenarioIdentifier = scenarioIdentifier else { return urlRequest }
         guard let path = urlRequest.url?.path else { return urlRequest }
